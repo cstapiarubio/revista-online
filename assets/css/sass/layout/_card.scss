@@ -1,0 +1,18 @@
+/*.cont{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    &_contenido_list, &_menu{
+        grid-column: 1 / 4;
+        grid-row: 1;
+    }
+    &_newsletter{
+        grid-column: 1 / 4;
+        grid-row: 4;
+    }
+    &_footer{
+        grid-column: 1 / 4;
+        grid-row: 5;
+    }
+}*/

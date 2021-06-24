@@ -1,5 +1,7 @@
 //abstracts
-@import './abstracts/variables';
+@import './abstract/variables';
+@import './abstract/grid';
+@import './abstract/mixins';
 //vendors
 //base
 @import './base/reset';

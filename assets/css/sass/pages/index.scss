@@ -1,0 +1,31 @@
+.cont{
+    &_contenido{
+        &_title, &_newsletter_h2{
+            font-family: $raleway;
+            font-size: $large;
+            font-weight: $regular;
+        }
+        &_h2{
+            font-family: $raleway;
+            font-size: $medium;
+            font-weight: $regular; 
+        }
+        &_p{
+            font-family: $roboto;
+            font-size: $small;
+            font-weight: $light;
+        }
+
+        &_list_aside{
+            @include for-phone-only{
+                display: none;
+            }
+            @include for-tablet-portrait-up{
+                display:none;
+            }
+        }
+
+    }
+
+}
+

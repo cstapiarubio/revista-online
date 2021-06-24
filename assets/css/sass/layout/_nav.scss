@@ -1,8 +1,16 @@
 //nav
 .cont_menu{
+    font-family: $merry;
     &_logo{
-        font-family: $merry;
         font-weight: $bold;
         font-size: $x-large;
+    }
+    &_item{
+        display:inline-block;
+        width:30%;
+        font-size: $small;
+        &_a{
+            text-decoration: none;
+        } 
     }
 }
