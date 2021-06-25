@@ -1,6 +1,5 @@
-.cont{
-    &_contenido{
-        &_title, &_newsletter_h2{
+.contenido{
+        &_title{
             font-family: $raleway;
             font-size: $large;
             font-weight: $regular;
@@ -9,23 +8,89 @@
             font-family: $raleway;
             font-size: $medium;
             font-weight: $regular; 
+            @include for-phone-only{
+                font-weight: $bold;
+            }
+            @include for-tablet-portrait-up{
+                font-weight: $bold;
+            }
         }
         &_p{
             font-family: $roboto;
             font-size: $small;
             font-weight: $light;
+            padding-top: 5%;
         }
-
-        &_list_aside{
-            @include for-phone-only{
-                display: none;
-            }
-            @include for-tablet-portrait-up{
-                display:none;
-            }
+        &_list{
+            padding: 3%;
         }
-
-    }
-
 }
 
+.cont{
+    &_newsletter_h2{
+    font-family: $raleway;
+    font-size: $large;
+    font-weight: $regular;
+    }
+    &_newsletter{
+        text-align: center;
+        background-color: $light-gray;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        line-height: 30px;
+    }
+    button{
+        background-color: $blue;
+        color:$white;
+        border-radius: 5em;
+        padding:0.5%;
+    }
+    input{
+        padding:0.5%;
+    }
+    &_contenido_p{
+        font-family: $roboto;
+        font-size: $small;
+        font-weight: $light;
+
+    }
+}
+//aside
+.contenido{
+    &_aside{
+        width: 80%;
+        @include for-phone-only{
+            display: none;
+        }
+        @include for-tablet-portrait-up{
+            display:none;
+        }
+    }
+    &_aside_cabecera{
+        border-bottom: 1px solid $black;
+        padding-top: 5%;
+    }
+    &_tag{
+        padding-top: 5%;
+        border-bottom: 1px solid $black;
+    }
+    &_tag_item{
+        list-style: none;
+        display: inline-block;
+        width: 20%;
+        background-color: $blue;
+        color: $white;
+    }
+
+    &_destacadas{
+        padding-top: 5%;
+    }
+    &_destacadas_img{
+        width: 100%;
+    }
+}
+
+//footer
+.cont_footer{
+    text-align: center;
+}

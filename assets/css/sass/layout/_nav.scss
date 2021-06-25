@@ -1,16 +1,41 @@
 //nav
-.cont_menu{
+.menu{
     font-family: $merry;
+    border-bottom: 1px solid $black;
     &_logo{
         font-weight: $bold;
         font-size: $x-large;
+        padding-top: 5%;
+        padding-left: 5%;
     }
     &_item{
         display:inline-block;
         width:30%;
         font-size: $small;
+        @include for-phone-only{
+            width: 40%;
+        }
+        @include for-tablet-portrait-up{
+            width: 40%;
+        }
         &_a{
             text-decoration: none;
         } 
+    }
+    &_item:first-child{
+        @include for-phone-only{
+            display: none;
+        }
+        @include for-tablet-portrait-up{
+            display:none;
+        }
+    }
+    &_nav{
+        padding-top: 10%;
+    }
+    &_input{
+        border: 1px solid $black;
+        width: 80%;
+        border-radius: 2em;
     }
 }
